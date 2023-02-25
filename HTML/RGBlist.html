@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(RGBlist)</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="background">
+        <canvas id="background" class="background" width="600px" height="600px"></canvas>
+    </div>
+    <div id="grid-container" class="grid-container">
+        <canvas id="grid" class="grid-container__grid"></canvas>
+        <div class="cell-input-container">
+            <input
+                     id="cell-input"
+                     class="cell-input-container__input"
+                     type="text"
+                     onfocusout="cellFocusOut(value)"
+                     disabled>
+        </div>
+        <div class="cell-highlight" onclick="clickedHighlight(event)"></div>
+    </div>
+    <script src="../JAVASCRIPT/RGBlist.js"></script>
+</body>
+</html>
